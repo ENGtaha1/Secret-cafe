@@ -1,0 +1,248 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: Quicksand, sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+	
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+	
+}
+
+.form-wrapper {
+	
+  width: 100rem;
+  height: 100rem;
+  background-color: #eee;
+  border-radius: 3rem;
+  box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+  position: relative;
+  overflow: hidden;
+	
+}
+
+
+.container.change .banner {
+ height: 40%;
+}
+
+.banner h1 {
+  font-size: 4rem;
+  margin-bottom: 0rem;
+}
+
+
+.green-bg {
+	
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #000, #002);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  transition: height 1.5s cubic-bezier(0.15, 1.4, 0.22, 1);
+}
+.container.change .green-bg {
+  height: 40%;
+	
+}
+
+.green-bg0  {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: top 2s cubic-bezier(0.15, 1.4, 0.22, 1);
+}
+.container.change .green-bg .green-bg0 {
+  top: 5%;
+	
+}
+.green-bg1 button {
+  position: absolute;
+  top: 50%;
+  left: 32%;
+  transform: translateX(-50%);
+  width: 16rem;
+  height: 5rem;
+  background-color: transparent;
+  border: 0.1rem solid #fff;
+  border-radius: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: #fff;
+  cursor: pointer;
+  transition: top 2s cubic-bezier(0.15, 1.4, 0.22, 1);
+}
+.container.change .green-bg .green-bg1 button  {
+  top: 80%;
+	
+}
+.green-bg2 button {
+  position: absolute;
+  top: 50%;
+  left: 68%;
+  transform: translateX(-50%);
+  width: 16rem;
+  height: 5rem;
+  background-color: transparent;
+  border: 0.1rem solid #fff;
+  border-radius: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: #fff;
+  cursor: pointer;
+  transition: top 2s cubic-bezier(0.15, 1.4, 0.22, 1);
+}
+.container.change .green-bg .green-bg2 button  {
+  top: 80%;
+	
+}
+
+.signup-form {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10rem 0;
+  transition: top 2s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.container.change .signup-form {
+  top: 30%;
+  height: 65%;
+}
+
+.signup-form h1 {
+	
+  font-size: 4rem;
+  color: #000A1E;
+}
+.social-media {
+  display: flex;
+}
+.social-media .icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+	
+	
+}
+
+.social-media .icons a {
+
+  width: 50px;
+  height: 50px;
+  border: 1px solid transparent ;
+  border-radius: 80%;
+  font-size: 25px;
+  text-decoration: none;	
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5px;
+  margin-left: 5px;
+	
+}
+
+.icons a i{
+  transition: transform 0.3s ease-in-out;
+}
+.icons a:nth-child(1){
+  color: #1877F2;
+  border-color: #b7d4fb;
+}
+.icons a:nth-child(1):hover{
+  background: #1877F2;
+}
+.icons a:nth-child(2){
+  color: #e1306c;
+  border-color: #f5bccf;
+}
+.icons a:nth-child(2):hover{
+  background: #e1306c;
+}
+.icons a:nth-child(3){
+  color: #46C1F6;
+  border-color: #b6e7fc;
+}
+.icons a:nth-child(3):hover{
+  background: #46C1F6;
+}
+.icons a:nth-child(4){
+  color: #EABC00;
+  border-color: #F7E23E;
+}
+.icons a:nth-child(4):hover{
+  background: #FFE12B;
+}
+.icons a:nth-child(5){
+  color: #0B0B0B;
+  border-color: #000000;
+}
+.icons a:nth-child(5):hover{
+  background: #0B0B0B;
+}
+.icons a:hover{
+  color: #fff;
+  border-color: transparent;
+}
+.icons a:hover i{
+  transform: scale(1.2);
+}
+
+.input-group {
+  position: relative;
+}
+
+.input-group input {
+	
+  width: 28rem;
+  height: 5rem;
+  padding: 1rem 1rem 1rem 3rem;
+  background-color: #ddd;
+  border: none;
+  border-radius: 0.5rem;
+	
+}
+
+.input-group i {
+	
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+  color: #555;
+	
+}
+
+.signup-form button {
+  width: 16rem;
+  height: 5rem;
+  background-color: #000;
+  border: none;
+  border-radius: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: #fff;
+  margin-top: 3rem;
+  cursor: pointer;
+	
+}
